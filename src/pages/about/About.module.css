@@ -1,0 +1,21 @@
+.content {
+  max-width: 1280px;
+  margin: 28px auto 50px;
+  padding: 0 20px;
+}
+.content .dropdowns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 1023px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=About.module.css.map */

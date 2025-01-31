@@ -1,0 +1,70 @@
+@use '../../shared/variables.module' as variables;
+
+
+.content {
+  width: 100%;
+  max-width: 1280px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+  margin: 100px auto;
+  padding: 0 15px;
+
+  h1 {
+    color: variables.$color-main;
+    font-size: 288px;
+    font-weight: bold;
+    line-height: 90%;
+  }
+
+  h2 {
+    color: variables.$color-main;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .buttonLink {
+    color: variables.$color-black;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: variables.$color-transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-position: from-font;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    gap: 113px;
+    margin: 113px auto 113px;
+
+    h1 {
+      font-size: 140px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    gap: 113px;
+    margin: 113px auto;
+
+    h1 {
+      font-size: 96px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    .buttonLink {
+      font-size: 14px;
+    }
+  }
+}

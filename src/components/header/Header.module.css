@@ -1,0 +1,43 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.header {
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px auto 25px auto;
+  padding: 0 20px;
+  height: 68px;
+}
+.header .content {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .content .logo {
+  cursor: pointer;
+}
+.header .content nav {
+  display: inline-flex;
+  gap: 57px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 47px;
+  }
+  .header .content nav {
+    gap: 26px;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

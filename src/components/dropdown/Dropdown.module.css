@@ -1,0 +1,89 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.content {
+  container-type: inline-size;
+  position: relative;
+}
+.content button {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content button div {
+  width: 32px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
+}
+.content .dropdownContainer {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.content .dropdownContent {
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #F6F6F6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.content .rotate180 {
+  transform: rotate(-180deg);
+}
+.content .buttonContent {
+  position: relative;
+}
+.content .buttonContent .buttonBackground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 0;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content .buttonContent .buttonBackground[open] {
+  background-color: #F6F6F6;
+}
+
+@container (max-width: 640px) {
+  .content button {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .content .dropdownContent {
+    font-size: 18px;
+  }
+}
+@container (min-width: 340px) {
+  .dropdown .content button {
+    font-size: 13px;
+    line-height: 50%;
+  }
+  .dropdown .content .dropdownContent {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=Dropdown.module.css.map */

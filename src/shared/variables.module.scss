@@ -1,0 +1,20 @@
+$color-main: #FF6060;
+$color-black: #000000;
+$color-black-50: #00000050;
+$color-white: #FFFFFF;
+$color-transparent: #FFFFFF00;
+$color-light-gray: #F6F6F6;
+$color-gray: #E3E3E3;
+
+$font-main: Montserrat;
+
+:export {
+    colorMain: $color-main;
+    colorBlack: $color-black;
+    colorBlack50: $color-black-50;
+    colorWhite: $color-white;
+    colorTransparent: $color-transparent;
+    colorLightGray: $color-light-gray;
+    colorGray: $color-gray;
+    fontMain: $font-main;
+}

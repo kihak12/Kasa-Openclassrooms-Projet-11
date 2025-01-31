@@ -1,0 +1,10 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorLightGray: #F6F6F6;
+  fontMain: Montserrat;
+}
+
+/*# sourceMappingURL=variables.module.css.map */

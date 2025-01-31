@@ -1,0 +1,60 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.content {
+  position: relative;
+  border-radius: 10px;
+  height: 340px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.4) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+  width: 100%;
+  height: 100%;
+}
+.content img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: 50% 50%;
+  transition: transform 0.1s ease-in-out;
+}
+.content h1 {
+  display: block;
+  z-index: 1;
+  color: #FFFFFF;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 0 20px 20px;
+}
+.content:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3137254902);
+}
+.content:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    height: 255px;
+  }
+}
+
+/*# sourceMappingURL=CardListItem.module.css.map */

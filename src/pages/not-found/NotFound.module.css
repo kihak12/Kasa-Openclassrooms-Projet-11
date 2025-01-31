@@ -1,0 +1,73 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.content {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+.content h1 {
+  color: #FF6060;
+  font-size: 288px;
+  font-weight: bold;
+  line-height: 90%;
+}
+.content h2 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.content .buttonLink {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    gap: 113px;
+    margin: 113px auto 113px;
+  }
+  .content h1 {
+    font-size: 140px;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    gap: 113px;
+    margin: 113px auto;
+  }
+  .content h1 {
+    font-size: 96px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .content .buttonLink {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=NotFound.module.css.map */

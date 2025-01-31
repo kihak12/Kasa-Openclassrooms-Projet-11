@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../shared/variables.module.scss","Footer.module.scss"],"names":[],"mappings":"AAUA;EACI,WAXS;EAYT,YAXU;EAYV,cAXa;EAYb,YAXU;EAYV,kBAXgB;EAYhB,gBAXe;EAYf,WAXS;EAYT,UAVQ;;;ACNZ;EACE;EACA,kBDHY;ECIZ,ODFY;ECGZ;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;;;AAIJ;EACE;IACE;;EACA;IACE","file":"Footer.module.css"}

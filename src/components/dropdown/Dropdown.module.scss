@@ -1,0 +1,93 @@
+@use '../../shared/variables.module' as variables;
+
+  .content {
+    container-type: inline-size;
+    position: relative;
+
+    button {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      border: none;
+      background-color: variables.$color-main;
+      color: variables.$color-white;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 10px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      div {
+        width: 32px;
+        transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);;
+        margin-right: 10px;
+      }
+    }
+
+    .dropdownContainer {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .dropdownContent {
+      padding: 20px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: variables.$color-light-gray;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    .rotate180 {
+      transform: rotate(-180deg);
+    }
+
+    .buttonContent {
+      position: relative;
+
+      .buttonBackground {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        z-index: 0;
+        transition: background-color .3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .buttonBackground[open] {
+        background-color: variables.$color-light-gray;
+      }
+    }
+  }
+
+@container (max-width: 640px) {
+  .content {
+    button {
+      padding: 8px;
+      font-size: 18px;
+      line-height: 100%;
+    }
+    .dropdownContent {
+      font-size: 18px;
+    }
+  }
+}
+
+@container (min-width: 340px) {
+  .dropdown {
+    .content {
+      button {
+        font-size: 13px;
+        line-height: 50%;
+      }
+
+      .dropdownContent {
+        font-size: 12px;
+      }
+    }
+  }
+}

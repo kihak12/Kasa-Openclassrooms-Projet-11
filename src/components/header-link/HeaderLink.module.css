@@ -1,0 +1,28 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorLightGray: #F6F6F6;
+  fontMain: Montserrat;
+}
+
+.headerLink {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerLink {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=HeaderLink.module.css.map */

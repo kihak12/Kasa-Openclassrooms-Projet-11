@@ -1,0 +1,31 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.content {
+  margin: 43px 0 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: #F6F6F6;
+  border-radius: 25px;
+  padding: 50px;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 0;
+    background: #FFFFFF;
+    padding: 22px;
+    gap: 22px;
+  }
+}
+
+/*# sourceMappingURL=CardList.module.css.map */

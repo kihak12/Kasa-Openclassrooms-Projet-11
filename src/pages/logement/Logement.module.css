@@ -1,0 +1,202 @@
+:export {
+  colorMain: #FF6060;
+  colorBlack: #000000;
+  colorBlack50: rgba(0, 0, 0, 0.3137254902);
+  colorWhite: #FFFFFF;
+  colorTransparent: rgba(255, 255, 255, 0);
+  colorLightGray: #F6F6F6;
+  colorGray: #E3E3E3;
+  fontMain: Montserrat;
+}
+
+.content {
+  max-width: 1280px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.content .pulseAnimation {
+  animation: pulse 1s infinite;
+}
+.content .errorBlock {
+  height: 50svh;
+  display: flex;
+  justify-content: center;
+  padding-top: 8em;
+}
+.content .errorBlock h1 {
+  color: #FF6060;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 0 2em;
+  text-align: center;
+}
+.content .logementDetailsContainer {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+}
+.content .logementDetails {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.content .logementDetails h1 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 145%;
+}
+.content .logementDetails h2 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .logementSecondaryDetails {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.content .logementSecondaryDetails .starsLine {
+  display: inline-flex;
+  gap: 15px;
+}
+.content .logementSecondaryDetails .starsLine span {
+  width: 24px;
+  height: 25px;
+}
+.content .hostDetails {
+  display: inline-flex;
+  gap: 10px;
+  height: fit-content;
+}
+.content .hostDetails .hostName {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .hostDetails img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  fill: #C4C4C4;
+}
+.content .logementTags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content .logementTags .tag {
+  width: fit-content;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+.content .logementDropdowns {
+  margin-top: 30px;
+  display: grid;
+  gap: 6%;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    margin: 35px auto 50px auto;
+  }
+  .content .logementDetailsContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .content .logementDetails h1 {
+    font-size: 28px;
+  }
+  .content .logementTags .tag {
+    font-size: 12px;
+  }
+  .content .logementSecondaryDetails {
+    margin-top: 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content .logementSecondaryDetails .starsLine {
+    display: inline-flex;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content .errorBlock {
+    padding-top: 5em;
+  }
+  .content .errorBlock h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .content .logementDetails {
+    margin-top: 15px;
+  }
+  .content .logementDetails h1 {
+    font-size: 18px;
+  }
+  .content .logementDetails h2 {
+    font-size: 14px;
+  }
+  .content .logementTags {
+    gap: 5px;
+  }
+  .content .logementTags .tag {
+    font-size: 10px;
+  }
+  .content .logementSecondaryDetails {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content .logementSecondaryDetails .hostName {
+    font-size: 12px;
+  }
+  .content .logementSecondaryDetails img {
+    width: 34px;
+    height: 34px;
+  }
+  .content .logementSecondaryDetails .starsLine {
+    display: inline-flex;
+    gap: 5px;
+  }
+  .content .logementSecondaryDetails .starsLine span {
+    width: 18px;
+    height: 18px;
+  }
+  .content .logementDropdowns {
+    margin-top: 15px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=Logement.module.css.map */

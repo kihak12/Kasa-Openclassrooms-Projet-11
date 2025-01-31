@@ -1,0 +1,19 @@
+.content {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+.content .padded {
+  padding: 0 20px;
+}
+.content .mobilePadded {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content .mobilePadded {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=Home.module.css.map */

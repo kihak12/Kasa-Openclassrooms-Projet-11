@@ -1,0 +1,20 @@
+@use '../../shared/variables.module' as variables;
+
+.content {
+  margin: 43px 0 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: variables.$color-light-gray;
+  border-radius: 25px;
+  padding: 50px;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 0;
+    background: variables.$color-white;
+    padding: 22px;
+    gap: 22px;
+  }
+}
