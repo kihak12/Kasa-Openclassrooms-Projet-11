@@ -5,7 +5,6 @@ import sass from "sass";
 // https://vite.dev/config/
 export default defineConfig({
   build: {
-    base: '/Kasa-Openclassrooms-Projet-11/',
     outDir: 'dist',
     assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg'],
     rollupOptions: {
@@ -14,6 +13,7 @@ export default defineConfig({
         404: './public/404.html',
       },
       output: {
+        publicPath: '/Kasa-Openclassrooms-Projet-11/',
         assetFileNames: 'assets/[name][extname]'
       }
     }
