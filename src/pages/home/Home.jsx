@@ -9,7 +9,7 @@ export const Home = () => {
         <Header></Header>
         <div className={styles.content}>
             <div className={styles.padded}>
-                <HeroBanner title="Chez vous, partout et ailleurs" src="/src/assets/images/Image%20source%201.jpg"/>
+                <HeroBanner title="Chez vous, partout et ailleurs" src="/assets/images/Image%20source%201.jpg"/>
             </div>
             <div className={styles.mobilePadded}>
                 <CardList/>

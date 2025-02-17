@@ -12,7 +12,6 @@ export const Dropdown = (prop) => {
 
     const toggleDropdown = () => {
         setOpened(!opened)
-        console.dir(dropdownContentRef.current)
     };
 
     return <>

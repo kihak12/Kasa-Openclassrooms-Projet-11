@@ -10,7 +10,6 @@ export const Header = () => {
     const navigate = useNavigate();
 
     const navigateToMainPage = () => {
-        console.log('redirect')
         navigate('/');
     }
     return <>
