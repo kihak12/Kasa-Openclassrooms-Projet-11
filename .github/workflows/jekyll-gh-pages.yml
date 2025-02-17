@@ -25,7 +25,7 @@ jobs:
       - name: Copy FETCH directory
         run: |
           mkdir -p dist/FETCH
-          cp -R FETCH/ dist/FETCH/
+          cp -R FETCH/ dist/
         env:
           CI: false
 
