@@ -9,7 +9,7 @@ export const About = () => {
     return <>
         <Header></Header>
         <div className={styles.content}>
-            <HeroBanner src="/assets/images/image.webp" />
+            <HeroBanner src="./assets/images/image.webp" />
             <div className={styles.dropdowns}>
                 <Dropdown title="Fiabilité"  type="text" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                 <Dropdown title="Respect"  type="text" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

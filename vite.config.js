@@ -7,10 +7,14 @@ export default defineConfig({
   base: '/Kasa-Openclassrooms-Projet-11/',
   build: {
     outDir: 'dist',
+    assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg'],
     rollupOptions: {
       input: {
         main: './index.html',
         404: './public/404.html'
+      },
+      output: {
+        assetFileNames: 'assets/[name][extname]' // Structure de sortie
       }
     }
   },
