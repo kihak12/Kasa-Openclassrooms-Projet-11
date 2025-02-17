@@ -13,7 +13,6 @@ export default defineConfig({
         404: './public/404.html',
       },
       output: {
-        publicPath: '/Kasa-Openclassrooms-Projet-11/',
         assetFileNames: 'assets/[name][extname]'
       }
     }
