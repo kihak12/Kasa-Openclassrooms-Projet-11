@@ -11,7 +11,6 @@ export default defineConfig({
       input: {
         main: './index.html',
         404: './public/404.html',
-        _redirects: './public/_redirects'
       },
       output: {
         assetFileNames: 'assets/[name][extname]'
