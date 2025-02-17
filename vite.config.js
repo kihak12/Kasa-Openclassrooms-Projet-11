@@ -11,7 +11,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        404: './public/404.html'
+        404: './public/404.html',
+        redirects: './public/_redirects'
       },
       output: {
         assetFileNames: 'assets/[name][extname]' // Structure de sortie
